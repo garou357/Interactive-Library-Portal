@@ -12,3 +12,23 @@ body {
 hr {
   opacity: 30%;
 }
+.carousel-item {
+  height: 32rem;
+
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.overlay-image {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.carousel-inner {
+  
+  padding: 25px;
+}

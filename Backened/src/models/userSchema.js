@@ -13,10 +13,7 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    ConfirmPassword:{
-        type:String,
-        required:true
-    }
+   
 })
 
 const register = new mongoose.model("RegisterdUser",userSchema)

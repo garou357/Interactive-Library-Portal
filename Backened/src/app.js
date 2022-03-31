@@ -51,7 +51,7 @@ app.post("/userRegister",async (req,res)=>{
                 Name:username
             })
             const registeredUser = await user.save()
-            res.status(201).sendFile(path.join(__dirname, '../../index.html'))
+            res.status(201).sendFile(path.join(__dirname, '../../../index.html'))
             
         }
         else
@@ -77,5 +77,5 @@ app.post("/login", async (req, res) => {try {const { email, password } = req.bod
  const isMatch = await bcrypt.compare(password, user.Password);
  if (!isMatch) return res.status(400).json({ msg: "Invalid credentials." });
  const token = jwt.sign({ id: user._id },SECRET);
- res.sendFile(path.join(__dirname+"../../index.html"));} 
+ res.sendFile(path.join(__dirname+"../../../index.html"));} 
  catch (err) {res.status(500).json({ error: err.message });}});

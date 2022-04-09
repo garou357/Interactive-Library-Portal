@@ -51,7 +51,7 @@ app.post("/userRegister",async (req,res)=>{
                 Name:username
             })
             const registeredUser = await user.save()
-            res.status(201).sendFile(path.join(__dirname, '../../../index.html'))
+            res.status(201).sendFile(path.join(__dirname, '../../index.html'))
             
         }
         else
